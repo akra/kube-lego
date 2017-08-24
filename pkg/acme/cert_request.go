@@ -45,7 +45,7 @@ func (a *Acme) ensureAcmeClient() error {
 
 func (a *Acme) testReachablilty(domain string) error {
 	url := &url.URL{}
-	url.Scheme = "http"
+	url.Scheme = "https"
 	url.Host = domain
 	url.Path = kubelego.AcmeHttpSelfTest
 
